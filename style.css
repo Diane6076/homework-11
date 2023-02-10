@@ -388,3 +388,15 @@ margin-bottom: 100px;
 .clients-icon{
     fill: #AFB1B8;
 }
+@media screen and (min-width){
+.container{
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+}
+@media screen and (min-width){
+ .container{
+
+}
+}
