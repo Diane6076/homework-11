@@ -16,13 +16,11 @@
     <title>Website Template</title>
 
 </head>
-
-<body>
-
+<html>
     <body>
-        <div class="container">
 
-            <header class="erl header">
+            <header class="header ">
+                <div class="container">
                 <nav class="nav-header">
                     <a class="logo" href="web.jpg"> <span class="web2"> Web</span>Studio</a>
                     <ul class="site-nav st ">
@@ -30,12 +28,18 @@
                         <li> <a class="re1 item" href="#"> Портфоліо</a></li>
                         <li> <a class="re2 item" href="#"> Контакти</a></li>
                     </ul>
+                    
+                <svg width="25px" height="20px">
+                    <use href="img/sprite.svg#icon-menu" ></use>
+                </svg>
                 </nav>
                 <ul class="site-nav-contact mail">
                     <li><a class="re3 item" href="mailto: info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="re4 item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                   
                 </ul>
-
+        
+            </div>
             </header>
             <main>
                 <section>
@@ -47,7 +51,8 @@
                         </div>
                     </div>
 
-                    <section class="feature">
+                    <section class="feature section">
+                        <div class="container">
                         <ul class="feature-list">
                             <li class="feature-item">
                                 <div class="feature-icon">
@@ -84,10 +89,11 @@
                                     Voluptatem veritatis exercitationem velit magnam iure.</p>
                             </li>
                         </ul>
+                        </div>
                     </section>
 
 
-                    <div class="what">
+                    <div class="whatwedo">
                         <h2>Чим ми займаємося</h2>
                         <div class="what-we-do">                        
                             <img class="in on " src="img/work1.jpg" alt="">
@@ -202,7 +208,6 @@
                     </ul>
                 </div>
             </footer>
-        </div>
 
     </body>
 

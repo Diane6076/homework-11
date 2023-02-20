@@ -20,7 +20,6 @@ body {
     font-size: 14px;
     width: 100%;
 }
-/* прр */
 ul {
     margin: 0;
     padding: 0;
@@ -37,31 +36,52 @@ img {
     height: auto;
 }
 
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-    width: 70%;
+    /* width: 70%; */
 }
 
 .header {
-    /* border: 1px solid greenyellow; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    /* padding: 25px; */
+   padding-bottom: 16px;
+   padding-top: 16px;
+
 }
 
-.erl {
 
-    flex-direction: row;
-    white-space: pre;
+@media screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+  }
+@media screen and (min-width:1200px ) {
+    .container{
+        width: 1200px;
+    }
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      
 }
-
 .logo {
     font-family: Raleway;
     font-size: 26px;
@@ -75,10 +95,11 @@ img {
 .nav-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .site-nav {
-    display: flex;
+    display: none;
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -88,7 +109,7 @@ img {
 }
 
 .site-nav-contact {
-    display: flex;
+    display: none;
     /* margin-left: 335px; */
 }
 
@@ -96,21 +117,18 @@ img {
     margin-right: 50px;
 }
 
-.mail {}
-
 .item:not(last-child) {
     margin-right: 55px;
 }
 
 /* герой  */
 .hero {
-    display: flex;
-    justify-content: center;
-    color: white;
-    height: 600px;
-    width: 100%;
-    top: 80px;
-    background-image: url(img/team.jpg);
+     color: white; 
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url( img/team.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .hero-action {
@@ -126,7 +144,7 @@ img {
 .hero-title {
     line-height: 1.36;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 25px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -144,10 +162,6 @@ img {
     border: 0;
     border-radius: 4px;
     padding: 10px 15px;
-}
-
-.w {
-    text-decoration: none;
 }
 
 .re {
@@ -200,21 +214,18 @@ img {
 }
 
 .feature {
-    margin-top: 94px;
-    margin-bottom: 94px;
+  margin-left: 100px;
 }
 
 .feature-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+
 }
 
 .feature-item {
     width: 270px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    /* display: flex; */
+    /* flex-direction: column;
+    gap: 12px; */
 }
 
 .feature-icon {
@@ -223,7 +234,6 @@ img {
     background-color:#F5F4FA;
     border-radius: 5px;
     display: flex;
-    place-items: center;
     justify-content: center;
     margin-bottom: 15px;
 }
@@ -270,7 +280,7 @@ ul {
 
 }
 
-.what {
+.whatwedo {
     display: flex;
     gap: 50px;
     flex-direction: column;
@@ -278,8 +288,10 @@ ul {
 }
 
 .what-we-do {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    margin-left: 100px;
+ 
 }
 
 .on {
@@ -296,12 +308,16 @@ h2 {
     letter-spacing: 0.03em;
     color: #212121;
 }
-
+.our-team{
+    margin-left: 100px;
+    padding-bottom: 10px;
+}
 .list-team {
-    display: flex;
+   
+    /* display: flex; */
     width: 80%;
     margin: 0 auto;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .item-cart {
@@ -309,8 +325,7 @@ h2 {
     border-radius: 0px 0px 4px 4px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    place-items: center;
+    place-items: center; 
     background-color: white;
     padding-bottom: 20px;
 }
@@ -368,8 +383,8 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 .clients-list{
-    display: flex;
-    justify-content: space-between;
+     display: flex;
+   flex-direction: column;
 
 }
 .clients-item{
@@ -378,15 +393,17 @@ border: 1PX solid #AFB1B8;
 border-radius: 4px;
 width: 155px ;
 height:90px;
-margin-top: 30px;
-margin-bottom: 100px;
+ margin-top: 20px;
+margin-bottom: 20px;
 }
 .clients-icon{
     fill: #AFB1B8;
 }
-@media screen and (min-width){
+
+
+/* @media screen and (min-width){
 .container{
-    width: 1200px;
+    width: 768px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -395,4 +412,4 @@ margin-bottom: 100px;
  .container{
 
 }
-}
+}  */
