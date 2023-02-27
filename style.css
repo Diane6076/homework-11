@@ -348,7 +348,6 @@ img {
   
 .feature-item {
     width: 270px;
-   
 }
 @media screen and (min-width:768px) {
     .feature-list {
@@ -365,8 +364,7 @@ img {
     }
   }
   @media screen and (min-width:1200px) {
-    .feture_item {
-    
+    .feture-item {
     }
   }
 
@@ -422,16 +420,12 @@ ul {
 .our-team {
     background-color: #F5F4FA;
     margin-top: 100px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
    text-align: center;
     padding-bottom: 10px;
 }
 
 .team-list {
     margin-bottom: 30px;
-
 }
 
 .item-cart {
