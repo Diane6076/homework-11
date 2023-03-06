@@ -505,8 +505,8 @@ margin-bottom: 30px;
 
 .clients-list{
      display: flex;
-   flex-direction: column;
-   justify-content: center;
+   /* justify-content: center; */
+   flex-wrap: wrap;
 
 }
 .clients-item{
@@ -517,9 +517,8 @@ margin-bottom: 30px;
     text-align: center;
     border: 1PX solid #AFB1B8;
     border-radius: 4px;
-    width: 155px ;
-    height:90px;
     margin-bottom: 30px;
+    width: calc((100% - 30px * 2) / 2);
 }
 
 .clients-item:hover .clients-icon {
@@ -529,6 +528,7 @@ margin-bottom: 30px;
   .clients-item:hover {
     border: 1px solid #2196f3;
     cursor: pointer;
+    
   }
   
   .clients-icon {
