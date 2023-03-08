@@ -388,12 +388,14 @@ ul {
   }
 
 .section-title{
+  display: flex;
   text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
     color: #212121;
+    
 }
 
 @media screen and (min-width:1200px) {
