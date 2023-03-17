@@ -216,6 +216,8 @@ img {
 
 .menu-site-contact {
     /* display: none; */
+    display: flex;
+    
 }
 
 .menu-site-contact:not(last-child) {
