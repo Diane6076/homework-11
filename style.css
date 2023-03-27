@@ -127,7 +127,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-
     .menu {
       display: flex;
       align-items: center;
@@ -141,7 +140,7 @@ img {
     }
     .menu-site {
       display: flex;
-      margin-left: 93px;
+      margin-left: 5px;
       align-items: center;
     }
   
@@ -157,15 +156,7 @@ img {
       position: relative;
       margin-right: 57px;
     }
-  
-    .menu_nav-item {
-      color: #212121;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-    }
-  
+
     .header-contact {
       display: flex;
       flex-direction: column;
@@ -173,9 +164,8 @@ img {
   
     .header-icon {
       fill: #757575;
-      margin-right: 10px;
+      margin-right: 5px;
     }
-  
     .link {
       color: #757575;
       font-weight: 500;
@@ -212,7 +202,7 @@ img {
     }
   
     .header-contact:nth-child(2) {
-      margin-left: 30px;
+      margin-left: 10px;
     }
   }
 
@@ -220,19 +210,19 @@ img {
     /* display: none; */
     display: flex;
 }
-.menu-site-contact:not(last-child) {
-    margin-right: 50px;
+.menu-site-contact:not(:last-child) {
+    margin-right: 10px;
 }
 
 .item{
-    width: 122px;
+    width: 129px;
     height: 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 }
 .item:not(last-child) {
-  margin-right: 55px;
+  margin-right: 10px;
 }
 
 .item:hover{
@@ -259,13 +249,18 @@ img {
 }
 
 .link-re3 {
-    color: rgb(102, 219, 255);
+  display: flex;
+  color: rgba(122, 121, 121, 0.837);
 }
 
 .link-re4 {
-    display: flex;
-    align-items: center;
+  display: flex;
     color: rgba(122, 121, 121, 0.837);
+}
+@media screen and (min-width:768px) {
+  .link-re3.link-re4 {
+      display: none;
+    }
 }
 
 /*==================== герой =============== */
